@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marvel & DC Quiz</title>
+  <link rel="stylesheet" href="quiz-style.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <div class="quiz-header">
+    <title>Quiz Game</title>
+<h1 class="quiz-title">Quiz Game</h1>
+    <div class="score-badge" id="scoreBadge">Score: 0</div>
+  </div>
+
+  <div class="progress-wrap">
+    <div class="progress-bar" id="progressBar" style="width:0%"></div>
+  </div>
+
+  <div class="card">
+
+<div id="startScreen" class="start-screen">
+  <h2>Ready to Test Yourself?</h2>
+  <button id="btnStart" class="btn-start">Start Quiz</button>
+</div>
+
+    <div id="questionScreen">
+      <div class="q-meta">
+        <span class="q-counter" id="qCounter">Question 1 of <span id="totalQ">6</span></span>
+        <button class="q-skip" id="btnSkip">Skip →</button>
+      </div>
+
+      <p class="question-text" id="questionText"></p>
+
+      <div class="options" id="optionsContainer"></div>
+
+      <div class="explanation" id="explanation"></div>
+
+      <button class="btn-next" id="btnNext">Next Question →</button>
+    </div>
+
+    <div class="result-screen" id="resultScreen">
+      <div class="result-emoji" id="resultEmoji"></div>
+      <div class="result-title" id="resultTitle"></div>
+      <p class="result-score" id="resultScore"></p>
+
+      <div class="result-breakdown">
+        <div class="rb-item">
+          <span class="rb-num correct-num" id="correctNum">0</span>
+          <span class="rb-label">Correct</span>
+        </div>
+        <div class="rb-item">
+          <span class="rb-num wrong-num" id="wrongNum">0</span>
+          <span class="rb-label">Wrong</span>
+        </div>
+        <div class="rb-item">
+          <span class="rb-num skip-num" id="skipNum">0</span>
+          <span class="rb-label">Skipped</span>
+        </div>
+      </div>
+
+      <button class="btn-restart" id="btnRestart">↺ Play Again</button>
+    </div>
+
+  </div>
+</div>
+
+<script src="quiz-script.js"></script>
+</body>
+</html>
